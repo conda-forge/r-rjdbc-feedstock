@@ -51,6 +51,7 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - fhoehle
+    - xhochy
 
 # Package: RJDBC
 # Version: 0.2-7.1
