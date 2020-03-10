@@ -1,4 +1,4 @@
-{% set version = '0.2-7.1' %}
+{% set version = "0.2-8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RJDBC_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RJDBC/RJDBC_{{ version }}.tar.gz
-  sha256: 4540ad34a6dc46b07aee4da39e79872088b72da2f96ce8bad4f0513e879666b4
+  sha256: 2395845de8483136b29bd8462ba124e7d979b49e3f99105685e3c14ee50ed8e1
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -40,11 +40,10 @@ test:
 about:
   home: http://www.rforge.net/RJDBC/
   license: MIT
-  summary: The RJDBC package is an implementation of R's DBI interface using JDBC as a back-end.
-    This allows R to connect to any DBMS that has a JDBC driver.
+  summary: The RJDBC package is an implementation of R's DBI interface using JDBC as a back-end. This allows R to connect to any DBMS that has a JDBC driver.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
