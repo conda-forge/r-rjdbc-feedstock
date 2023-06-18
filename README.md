@@ -1,11 +1,11 @@
-About r-rjdbc
-=============
+About r-rjdbc-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rjdbc-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.rforge.net/RJDBC/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rjdbc-feedstock/blob/main/LICENSE.txt)
 
 Summary: The RJDBC package is an implementation of R's DBI interface using JDBC as a back-end. This allows R to connect to any DBMS that has a JDBC driver.
 
